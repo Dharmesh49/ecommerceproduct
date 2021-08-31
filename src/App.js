@@ -1,18 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
 
-import Header from './Component/HeaderComponent/Header';
 import Login from './Component/LoginComponent/Login';
 import Register from './Component/RegisterComponent/Register';
 import UpdateProduct from './Component/Product/UpdateProduct/UpdateProduct';
 import AddProduct from './Component/Product/AddProduct/AddProduct';
-
 import { BrowserRouter, Route } from 'react-router-dom';
+import Protected from './Component/ProtectedComponent/Protected';
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Header />
         <Route path="/login">
           <Login />
         </Route>
@@ -20,10 +17,12 @@ function App() {
           <Register />
         </Route>
         <Route path="/update">
-          <UpdateProduct />
+          <Protected Cmp={UpdateProduct} />
+          {/* <UpdateProduct />*/}
         </Route>
         <Route path="/home">
-          <AddProduct />
+          <Protected Cmp={AddProduct} />
+          {/*<AddProduct />*/}
         </Route>
       </BrowserRouter>
     </div>

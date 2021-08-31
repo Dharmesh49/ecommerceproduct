@@ -1,11 +1,12 @@
-import React from 'react'
-
+import React from 'react';
+import Header from '../../HeaderComponent/Header';
 const AddProduct = () => {
-    return (
-        <div>
-            <h1>Add Product Page</h1>
-        </div>
-    )
-}
+  return (
+    <div>
+      <Header />
+      <h1>Add Product Page</h1>
+    </div>
+  );
+};
 
-export default AddProduct
+export default AddProduct;
