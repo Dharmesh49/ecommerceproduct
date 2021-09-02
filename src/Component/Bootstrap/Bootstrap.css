@@ -2,3 +2,21 @@
  padding-left: 30px;
  text-decoration:none;
 }
+
+.delete{
+    background-color:#85ff0a;
+    color:black;
+    padding: 4px;
+    border-radius: 5px;
+    cursor: pointer;
+
+
+}
+.update{
+ background-color:#0affc6;
+    color:black;
+    padding: 4px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
