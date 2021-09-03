@@ -7,6 +7,7 @@ import AddProduct from './Component/Product/AddProduct/AddProduct';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Protected from './Component/ProtectedComponent/Protected';
 import ProductList from './Component/ProductList/ProductList';
+import SearchProduct from './Component/SearchComponent/SearchProduct';
 function App() {
   return (
     <div className="App">
@@ -24,6 +25,10 @@ function App() {
           </Route>
           <Route path="/home">
             <Protected Cmp={AddProduct} />
+            {/*<AddProduct />*/}
+          </Route>
+          <Route path="/search">
+            <Protected Cmp={SearchProduct} />
             {/*<AddProduct />*/}
           </Route>
           <Route exact path="/">

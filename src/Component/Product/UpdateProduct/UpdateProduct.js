@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from 'react';
 import Header from '../../HeaderComponent/Header';
@@ -20,11 +21,21 @@ function UpdateProduct(props) {
       <br />
       <input type="text" defaultValue={data.name} />
       <br /> <br />
-      <input type="text" defaultValue={data.name} />
+      <input type="text" defaultValue={data.price} />
       <br /> <br />
-      <input type="text" defaultValue={data.name} />
+      <input type="text" defaultValue={data.description} />
       <br />
       <br />
+      <input type="file" defaultValue={data.file_path} />
+      <br />
+      <br />
+      <img
+        style={{ width: 50 }}
+        src={'http://localhost:8000/' + data.file_path}
+      />
+      <br />
+      <br />
+      <button>Update</button>
     </div>
   );
 }
