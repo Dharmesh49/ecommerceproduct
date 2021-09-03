@@ -5,7 +5,7 @@ I have started step by step
   * React Js for Frontend Coding 
     Laravel for Backend API
     MySql for Backend Database
-    
+
 
 2) I have created 2 file folder structure 
    * First for Frontend React Js (name of folder :- ecommerceproduct)
@@ -23,5 +23,7 @@ I have started step by step
           Protected Component
           Bootstrap Component
 
-            
+  4) For Setup required you will 
+     For  Database --> Laravel & Mysql Wamp server , or Xampp Server
+     For Frontend ---> Visual Studio        
      
